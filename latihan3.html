@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="bukutamu">
+      <table border="1" align="center" cellpadding="5" cellspacing="5">
+        <thead>
+          <th colspan="2" bgcolor="gray">buku tamu</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="100">nama</td>
+            <td width="200"><input type="text" name="nama" size="30" /></td>
+          </tr>
+          <tr>
+            <td>e-mail</td>
+            <td><input type="text" name="mail" size="30" /></td>
+          </tr>
+          <tr>
+            <td>jenis kelamin</td>
+            <td><input type="radio" name="jk" value="p" />pria <input type="radio" name="jk" value="w" />wanita</td>
+          </tr>
+          <tr>
+            <td valign="top">hobby</td>
+            <td>
+              <input type="checkbox" name="hobby" value="membaca" />membaca<br />
+              <input type="checkbox" name="hobby" value="futsal" />futsal<br />
+              <input type="checkbox" name="hobby" value="hiking" />hiking<br />
+              <input type="checkbox" name="hobby" value="memancing" />memancing<br />
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">pendidikan terakhir</td>
+            <td>
+              <select name="pendidikan">
+                <option value="">-- pilih salah satu --</option>
+                <option value="smp">smp</option>
+                <option value="smu">smu</option>
+                <option value="d3">d3</option>
+                <option value="s1">s1</option>
+                <option value="s2">s2</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">komentar</td>
+            <td><textarea name="komentar" rows="3" cols="30" color=""></textarea></td>
+          </tr>
+        </tbody>
+        <tfoot bgcolor="gray">
+          <th colspan="2" align="center">
+            <input type="submit" name="proses" value="kirim" />
+            <input type="reset" name="disproses" value="batal" />
+          </th>
+        </tfoot>
+      </table>
+    </form>
+  </body>
+</html>
