@@ -1,0 +1,33 @@
+:root {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #43436c;
+  font-size: 12pt;
+  line-height: 0.5cm;
+}
+body {
+  background: linear-gradient(#ccad5d, yellowgreen);
+  margin: 0.5cm 1cm;
+  position: relative;
+}
+hr {
+  border: solid rgb(101, 84, 42);
+}
+h1 {
+  color: rgb(245, 233, 202);
+  line-height: 1cm;
+  text-transform: uppercase;
+  margin: auto;
+  letter-spacing: 12px;
+}
+fieldset {
+  background-color: yellowgreen;
+  border: 2px solid rgb(108, 80, 8);
+  border-radius: 25px;
+}
+fieldset legend {
+  background-color: none;
+}
+fieldset legend h2 {
+  color: #5d4c1d;
+  font-family: comic sans ms;
+}
