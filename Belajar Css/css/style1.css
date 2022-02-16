@@ -1,0 +1,91 @@
+:root {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #43436c;
+  font-size: 12pt;
+  line-height: 0.5cm;
+}
+body {
+  background: linear-gradient(#ccad5d, yellowgreen);
+  margin: 0.5cm 1cm;
+}
+hr {
+  border: solid rgb(101, 84, 42);
+  margin-bottom: 10px;
+}
+
+div#menu {
+  text-align: center;
+}
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14pt;
+  border: 1px solid #644916;
+  color: #96eb96;
+  border-radius: 20px;
+  background-color: #6cbd47;
+  padding: 4px;
+  margin: 0 5px;
+}
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17pt;
+  border: 1px solid #644916;
+  color: #e8eee8;
+  border-radius: 25px;
+  background-color: #1f5506;
+  padding: 4px;
+  margin: 0 5px;
+}
+h1 {
+  color: rgb(245, 233, 202);
+  line-height: 1cm;
+  text-transform: uppercase;
+  margin: auto;
+  letter-spacing: 12px;
+}
+fieldset {
+  background-color: yellowgreen;
+  border: 2px solid rgb(108, 80, 8);
+  border-radius: 25px;
+}
+fieldset legend {
+  background-color: none;
+}
+fieldset legend h2 {
+  color: #5d4c1d;
+  font-family: comic sans ms;
+}
+table {
+  background-color: #fff;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
