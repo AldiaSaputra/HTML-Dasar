@@ -1,0 +1,228 @@
+:root {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #43436c;
+  font-size: 12pt;
+  line-height: 0.5cm;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-timing-function: cubic-bezier(100, 50, 21, 6);
+  -moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100, 50, 21, 6);
+}
+h1 {
+  color: #e26eac;
+  line-height: 1cm;
+  text-transform: uppercase;
+  margin: auto;
+  letter-spacing: 12px;
+}
+.navbar  {
+  text-align: right;
+}
+.navbar a#satu{
+    margin-right: 30.5%;
+}
+
+body {
+  background: linear-gradient(#ccfbff, #ef96c5);
+  margin: 0.5cm 1cm;
+}
+hr {
+  border: solid rgb(101, 84, 42);
+  margin-bottom: 10px;
+}
+
+a:link,
+a:active,
+a:visited {
+  color: #f3e9e9;
+  background: #e26eac;
+  padding: 7px 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 25px 25px;
+}
+a:hover {
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  background: #fff;
+  padding: 20px 20px; #000;
+  color: #1b1b1b;
+}
+p.pragrf:first-letter {
+    font-size: 24pt;
+    color: #757534;
+    font-family: Comic sans ms;
+    float: left;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+p.pragrf:first-line {
+    font-style: italic;
+    background-color: #eecfe7;
+    color: #757534;
+}
+fieldset.my {
+    background-color: yellowgreen;
+    border: 2px solid rgb(108, 80, 8);
+    border-radius: 25px;
+    position: relative;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 25px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    margin: 0 125px;
+}
+fieldset.visi,fieldset.visi1,fieldset.visi2,fieldset.visi3{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 3pt;
+}
+fieldset.visi legend,fieldset.visi1 legend,fieldset.visi2 legend ,fieldset.visi3 legend{
+    background-color: #ccfbff;
+}
+fieldset legend {
+    background-color: #e26eac;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+fieldset legend h2 {
+  color: #5d4c1d;
+  font-family: comic sans ms;
+}
+table {
+  background-color: #fff;
+}
+.type1 {
+    list-style-image: url('../icon/jempol.gif');
+}
+.type2 {
+    list-style-image: url('../icon/good.png');
+}
+.type3 {
+    list-style-image: url('../icon/home.gif');
+}
+.type4 {
+    list-style-image: url('../icon/marah.jpg');
+}
+.type5 {
+    list-style-image: url('../icon/phone.png');
+}
+.type6 {
+    list-style-image: url('../icon/sendok.jpg');
+}
+.type7 {
+    list-style-image: url('../icon/female.png');
+}
+.type8 {
+    list-style-image: url('../icon/pusing.jpg');
+}
+.type9 {
+    list-style-image: url('../icon/star.jpg');
+}
+ .card:hover{
+    background: rgba(255,255,255,0.2);
+}
+.card::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 23px;
+    background: #ecc3e4;
+}
+.card .content{
+    position: relative;
+    align-items: center;
+    gap: 20px;
+    font-family: cursive;
+}
+.card .content .imgBx img{
+    top: 0;
+    left: 0;
+    width: 9%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .content .details{
+    flex-direction: column;
+    gap: 10px;
+    color: #111;
+}
+.card .content .details div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+.container {
+    padding: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin: 5px 15px;
+    gap:20px;
+    position: relative;
+  }
+.card-2 {
+    background-color: #ecc3e3;
+    width: 100%;
+    height: auto;
+    grid-column: span 4;
+    margin: 10px 0;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 20px 20px rgba(0,0,0,.1);
+  
+  }
+
+  .body-card {
+    padding: 10px 15px;
+  }
+  
+  .body-card h3 {
+    margin: 0;  
+  
+  }
+   @media screen and (min-width: 550px) {
+    .card {
+    grid-column: span 4;
+  }
