@@ -1,0 +1,82 @@
+<script>
+  //belajar array assoc
+  /*
+    var nilai = new Array();
+    nilai['Fadli'] = 89
+    nilai['Fadli'] = 60
+    nilai['Maria'] = 78
+    nilai['Angga'] = 95
+    */
+  let nilai = {
+    Fadli: 89,
+    Andi: 59,
+    Maria: 78,
+    Angga: 95,
+    Bedu: 45,
+    Siti: 99,
+    Andri: 79,
+    Mario: 38,
+    Anggun: 65,
+    Deden: 75,
+  };
+
+  let judul = ["No.", "Nama", "Nilai", "Keterangan", "Grade", "Predikat"];
+</script>
+<h3 align="center">Daftar Nilai Mahasiswa</h3>
+<table align="center" cellpadding="10" cellspacing="0" width="40%">
+  <thead>
+    <tr bgcolor="darkblue">
+      <script>
+        for (let jdl in judul) {
+          document.write(`<th>${judul[jdl]}</th>`);
+        }
+      </script>
+    </tr>
+  </thead>
+  <tbody>
+    <script>
+      let no = 1;
+      for (let n in nilai) {
+        //warna-warni
+        let warna = no % 2 == 1 ? "#D6EAF8" : "#60ADE3";
+        //grade
+        let grade, predikat;
+        let skor = nilai[n];
+        if (skor >= 85 && skor <= 100) grade = "A";
+        else if (skor >= 75 && skor < 85) grade = "B";
+        else if (skor >= 60 && skor < 75) grade = "C";
+        else if (skor >= 30 && skor < 60) grade = "D";
+        else if (skor >= 0 && skor < 30) grade = "E";
+        else grade = "";
+        //predikat
+        switch (grade) {
+          case "A":
+            predikat = "Memuaskan";
+            break;
+          case "B":
+            predikat = "Baik";
+            break;
+          case "C":
+            predikat = "Cukup";
+            break;
+          case "D":
+            predikat = "Kurang";
+            break;
+          case "E":
+            predikat = "Buruk";
+            break;
+          default:
+            predikat = "";
+        }
+        document.write(`<tr bgcolor="${warna}">
+                    <td>${no++}</td>
+                    <td>${n}</td>
+                    <td>${nilai[n]}</td>
+                    <td>${nilai[n] >= 60 ? "Lulus" : "Gagal"}</td>
+                    <td>${grade}</td>
+                    <td>${predikat}</td>
+                </tr>`);
+      }
+    </script>
+  </tbody>
+</table>

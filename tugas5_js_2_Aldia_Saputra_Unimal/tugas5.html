@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script language="javascript" src="style.js"></script>
+    <title>Tugas 5 JavaScript</title>
+  </head>
+  <body>
+    <div id="form-daftar">
+      <div class="judul-form">Form Toko Online</div>
+      <div class="sub-judul-form">Kemudahan, sampai kapan pun</div>
+
+      <form id="formulir">
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="nama-depan">Nama :</label></td>
+              <td>
+                <div><input name="nama" type="text" value="" /></div>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label> Produk:</label></td>
+              <td>
+                <div>
+                  <select name="produk" value="">
+                    <option value="">Jenis:</option>
+                    <option value="Tv">Tv</option>
+                    <option value="Kulkas">Kulkas</option>
+                    <option value="AC">AC</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="nama-depan">Jumlah :</label></td>
+              <td>
+                <div><input name="jumlah" type="number" value="" /></div>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><input type="button" class="tombol-mendaftar" onclick="cetak()" name="proses" value="Check" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

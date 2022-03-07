@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,h1,h2,h3,p,td,quote,small,form,input,ul,li,ol,label{
+      margin:0px;
+      padding:0px;
+      }
+
+      body{
+      margin-top:20px;
+      font-family:Arial, Helvetica, sans-serif;
+      color:#51555C;
+      height:100%;
+      font-size:12px;
+      }
+
+      /* Style inputan dan pilihan (selected) */
+      input,select{
+      padding:6px;
+      color:#333333;
+      border:1px solid #96A6C5;
+      margin-top:2px;
+      width:230px;
+      font-size:14px;
+      }
+
+      select{
+      width:auto;
+      padding:2px;
+      }
+
+      .formline{
+      padding:3px;
+      }
+
+      label{
+      font-size:13px;
+      display:block;
+      text-align:right;
+      }
+
+      table{
+      width:370px;
+      }
+
+      td{
+      font-size:11px;
+      }
+
+      .input-container{
+      padding:1px;
+      }
+
+      /* Style Form */
+      #form-daftar,.registered{
+      border:3px solid #eeeeee;
+      padding:15px;
+      background:url(img/bg.jpg) repeat-x #cbd4e4;
+      color:#203360;
+      margin:30px auto 40px auto;
+      width:400px;
+      }
+
+      /* Judul dan Sub Judul */
+      .judul-form,
+      .sub-judul-form{
+      font-size:20px;
+      font-family:&quot;Lucida Grande&quot;,Tahoma,Verdana,Arial,sans-serif;
+      font-size:20px;
+      font-weight:bold;
+      }
+
+      .sub-judul-form{
+      font-weight:normal;
+      font-size:14px;
+      padding:6px 0 15px 0;
+      }
+
+
+      /* Tombol Mendaftar */
+      .tombol-mendaftar{
+      width:auto;
+      margin:10px 0 0 2px;
+      padding:5px 9px 5px 9px;
+      color:white;
+      background-color:#67A54B;
+      outline:none;
+      border:1px solid #006600;
+      font-weight:bold;
+      }
+
+      .tombol-mendaftar:active{
+      background-color:#609946;
+      padding:5px 9px 5px 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form-daftar">
+      <div class="judul-form">Mendaftar</div>
+      <div class="sub-judul-form">Gratis, sampai kapan pun</div>
+
+      <form>
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="nama-depan">Nama Depan:</label></td>
+              <td>
+                <div><input name="nama-depan" type="text" /></div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="nama-belakang">Nama Belakang:</label></td>
+              <td>
+                <div><input name="nama-belakang" type="text" /></div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email Anda:</label></td>
+              <td>
+                <div><input name="email" type="text" /></div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email-ulang">Masukkan Ulang Email:</label></td>
+              <td>
+                <div><input name="email" type="text" /></div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="sandi">Kata Sandi Baru:</label></td>
+              <td>
+                <div><input name="pass" type="password" /></div>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label>Tanggal Lahir:</label></td>
+              <td>
+                <div>
+                  <select name="bulan">
+                    <option value="0">Tanggal:</option>
+                    <script>
+                      let no;
+                      for (no = 1; no <= 31; no++) {
+                        document.write("<option value=" + no + ">" + no + "</option>");
+                      }
+                    </script>
+                  </select>
+
+                  <select name="tanggal">
+                    <option value="0">Bulan:</option>
+                    <script>
+                      const bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+                      for (let bln in bulan) {
+                        document.write(`<option value="#">${bulan[bln]}</option>`);
+                      }
+                    </script>
+                  </select>
+
+                  <select name="tahun">
+                    <option value="0">Tahun:</option>
+                    <script>
+                      for (no = 2022; no >= 1922; no--) {
+                        if (no == 1961) break;
+                        if (no >= 2010) continue;
+                        document.write("<option value=" + ">" + no + "</option>");
+                      }
+                    </script>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="jenis-kelamin">Saya:</label></td>
+              <td>
+                <div>
+                  <script>
+                    const gender = ["laki-Laki", "Perempuan"];
+                    for (let gen in gender) {
+                      document.write(`<input type='radio' name='tes' value=>${gender[gen]}`);
+                    }
+                  </script>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><input type="submit" class="tombol-mendaftar" value="Mendaftar" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

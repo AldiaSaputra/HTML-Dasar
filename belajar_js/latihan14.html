@@ -1,0 +1,13 @@
+<form id="formulir">
+  <input type="text" name="harga" onfocus="kosong1()" value="Harga Produk" />
+  <input type="text" name="jumlah" onfocus="kosong2()" value="Jumlah Beli" />
+  <select name="valas" onchange="totalHarga()">
+    <option value="">--Pilih Valas --</option>
+    <option value="15880">EURO</option>
+    <option value="14575">USD</option>
+    <option value="128">JPY</option>
+  </select>
+  <input type="text" name="hasil" value="0" disabled />
+  <input type="button" name="batal" value="Batal" onclick="kosongAll()" />
+</form>
+<script src="kurs.js"></script>

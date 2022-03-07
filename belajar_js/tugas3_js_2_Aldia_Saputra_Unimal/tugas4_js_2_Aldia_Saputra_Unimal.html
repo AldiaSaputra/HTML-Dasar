@@ -1,0 +1,92 @@
+<style>
+  #tugas {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+  }
+
+  #tugas td,
+  #tugas th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #tugas tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  #tugas tr:hover {
+    background-color: #ddd;
+  }
+
+  #tugas th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+  }
+</style>
+<script>
+  let jabatan = {
+    Budi: "Manager",
+    Siti: "Manager",
+    Andi: "Kabag",
+    Deden: "Asisten Manager",
+    Wawan: "Staff",
+    Jk: "Kabag",
+    Mimin: "Staff",
+  };
+
+  let judul = ["No.", "Nama", "Jabatan", "Gaji Pokok", "Tunjangan Jabatan", "Total Gaji"];
+</script>
+
+<h3 align="center">Data Kariyawan</h3>
+<table align="center" cellpadding="12" cellspacing="0" width="44%" id="tugas">
+  <thead>
+    <tr bgcolor="#04AA6D">
+      <script>
+        for (let jdl in judul) {
+          document.write(`<th>${judul[jdl]}</th>`);
+        }
+      </script>
+    </tr>
+  </thead>
+
+  <tbody>
+    <script>
+      let no = 1;
+      for (let i in jabatan) {
+        let jb = jabatan[i];
+        let gapok, tunjab, gaji_total;
+        switch (jb) {
+          case "Manager":
+            gapok = 20000000;
+            break;
+          case "Asisten Manager":
+            gapok = 15000000;
+            break;
+          case "Kabag":
+            gapok = 10000000;
+            break;
+          case "Staff":
+            gapok = 5000000;
+            break;
+          default:
+            gapok = "";
+        }
+
+        tunjab = 0.2 * gapok;
+        gaji_total = gapok + tunjab;
+        let warna = no % 2 == 1 ? "#fff" : "#cadfd2d0";
+        document.write(`<tr bgcolor="${warna}">
+                      <td>${no++}</td>
+                      <td>${i}</td>
+                      <td>${jabatan[i]}</td>
+                      <td>Rp.${gapok}</td>
+                      <td>Rp.${tunjab}</td>
+                      <td>Rp.${gaji_total}</td>
+                  </tr>`);
+      }
+    </script>
+  </tbody>
+</table>

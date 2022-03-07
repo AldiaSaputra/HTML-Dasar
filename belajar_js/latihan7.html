@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Mahasiswa</title>
+  </head>
+  <body>
+    <h3 align="center">Daftar Mahasiswa</h3>
+    <table align="center" cellpadding="10" cellspacing="0" width="40%" border="1">
+      <thead bgcolor="blue">
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Alamat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <script>
+          for (no = 1; no <= 10; no++) {
+            let warna = no % 2 == 0 ? "yellow" : "greenyellow";
+            document.write("<tr bgcolor=" + warna + ">\
+                <td>" + no + "</td>\
+                <td> siswa" + no + "</td>\
+                <td> jalan magonda" + no + "</td>\
+              </tr>");
+          }
+        </script>
+      </tbody>
+    </table>
+  </body>
+</html>

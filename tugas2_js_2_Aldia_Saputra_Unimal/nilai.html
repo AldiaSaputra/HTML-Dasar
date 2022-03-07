@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belajar Struktur Kendali IF</title>
+  </head>
+
+  <body>
+    <marquee onmouseover="stop()" onmouseout="start()">
+      <h3>Belajar Kondisi IF</h3>
+    </marquee>
+    <hr />
+    <script>
+      var nama_mahasiswa = "Aldia Saputra";
+      var mata_kuliah;
+      var menikah = "Iya";
+      var nilai = 89;
+      var ket, grade, predikat;
+
+      ket = nilai >= 60 ? "Lulus" : "Gagal";
+
+      if (nilai >= 85 && nilai <= 100) grade = "A";
+      //TRUE 1
+      else if (nilai > 75 && nilai <= 85) grade = "B";
+      //TRUE 2
+      else if (nilai >= 60 && nilai <= 75) grade = "C";
+      //TRUE 3
+      else if (nilai > 30 && nilai < 60) grade = "D";
+      //TRUE 4
+      else grade = "E";
+      //FALSE
+
+      // switch case
+      switch (grade) {
+        case "A":
+          predikat = "Memuaskan";
+          break;
+        case "B":
+          predikat = "Baik";
+          break;
+        case "C":
+          predikat = "Cukup";
+          break;
+        case "D":
+          predikat = "Kurang";
+          break;
+        default:
+          predikat = "Buruk";
+      }
+
+      document.write("Nama :" + nama_mahasiswa + "<br/>Status :" + grade + "<br/>Nilai yang Diperoleh :" + nilai + "<br/>Predikat :" + predikat + "<br/>Keterangan :" + ket);
+    </script>
+  </body>
+</html>

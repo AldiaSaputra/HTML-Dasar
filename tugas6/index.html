@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator sederhana</title>
+    <link rel="stylesheet" href="tugas6.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Kalkulator</h1>
+      <hr />
+      <form id="formulir">
+        <label>Nilai 1:</label><br />
+        <input type="text" name="a1" value="Masukan Nilai" onfocus="clear1()" /><br />
+        <label>Nilai 2:</label><br />
+        <input type="text" name="a2" value=" Masukan Nilai" onfocus="clear2()" />
+        <label>Hasil:</label><br />
+        <input type="text" name="hasil" value="0" disabled />
+        <table align="center">
+          <tr>
+            <td><input type="button" value="+" onclick="tambah()" /></td>
+            <td><input type="button" value="-" onclick="kurang()" /></td>
+            <td><input type="button" value=":" onclick="bagi()" /></td>
+            <td><input type="button" value="X" onclick="kali()" /></td>
+            <td><input type="button" value="^" onclick="kuadrat()" /></td>
+            <td><input type="button" value="Batal" name="batal" onfocus="kosong()" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+  <script language="javascript" src="tugas6.js"></script>
+</html>

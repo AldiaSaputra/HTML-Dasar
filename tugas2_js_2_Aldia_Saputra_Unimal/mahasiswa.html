@@ -1,0 +1,82 @@
+<!-- <script>
+  document.write("----------cetak angka 1 s/d 30-----------");
+  let angka;
+  for (angka = 1; angka <= 30; angka++) {
+    //increment angka++ => angka = angka + 1
+    document.write("<br/>No. " + angka);
+  }
+
+  let no;
+  for (no = 1; no <= 10; no++) {}
+</script> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #perulangan {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 60%;
+        margin: 0 20%;
+      }
+
+      #perulangan td,
+      #perulangan th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #perulangan tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      #perulangan tr:hover {
+        background-color: #ddd;
+      }
+
+      #perulangan th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: #4edace;
+        color: white;
+      }
+    </style>
+    <script>
+      document.write("<table id='perulangan'>");
+      document.write("<thead>");
+      document.write("<th>");
+      document.write("No");
+      document.write("</th>");
+      document.write("<th>");
+      document.write("Nama");
+      document.write("</th>");
+      document.write("<th>");
+      document.write("Alamat");
+      document.write("</th>");
+      document.write("</thead>");
+      document.write("<tbody>");
+      document.write("<tr>");
+      for (no = 1; no <= 10; no++) {
+        document.write("<td>");
+        document.write(no);
+        document.write("</td>");
+        document.write("<td>");
+        document.write("Siswa " + no);
+        document.write("</td>");
+        document.write("<td>");
+        document.write("jl. Margonda No " + no);
+        document.write("</td>");
+        document.write("</tr>");
+      }
+      document.write("</tbody>");
+      document.write("</table>");
+    </script>
+  </body>
+</html>

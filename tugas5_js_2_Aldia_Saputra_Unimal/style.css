@@ -1,0 +1,93 @@
+
+      body,h1,h2,h3,p,td,quote,small,form,input,ul,li,ol,label{
+      margin:0px;
+      padding:0px;
+      }
+
+      body{
+      margin-top:20px;
+      font-family:Arial, Helvetica, sans-serif;
+      color:#51555C;
+      height:100%;
+      font-size:12px;
+      }
+
+      /* Style inputan dan pilihan (selected) */
+      input,select{
+      padding:6px;
+      color:#333333;
+      border:1px solid #96A6C5;
+      margin-top:2px;
+      width:230px;
+      font-size:14px;
+      }
+
+      select{
+      width:auto;
+      padding:2px;
+      }
+
+      .formline{
+      padding:3px;
+      }
+
+      label{
+      font-size:13px;
+      display:block;
+      text-align:right;
+      }
+
+      table{
+      width:370px;
+      }
+
+      td{
+      font-size:11px;
+      }
+
+      .input-container{
+      padding:1px;
+      }
+
+      /* Style Form */
+      #form-daftar,.registered{
+      border:3px solid #eeeeee;
+      padding:15px;
+      background:url(img/bg.jpg) repeat-x #cbd4e4;
+      color:#203360;
+      margin:30px auto 40px auto;
+      width:400px;
+      }
+
+      /* Judul dan Sub Judul */
+      .judul-form,
+      .sub-judul-form{
+      font-size:20px;
+      font-family:&quot;Lucida Grande&quot;,Tahoma,Verdana,Arial,sans-serif;
+      font-size:20px;
+      font-weight:bold;
+      }
+
+      .sub-judul-form{
+      font-weight:normal;
+      font-size:14px;
+      padding:6px 0 15px 0;
+      }
+
+
+      /* Tombol Mendaftar */
+      .tombol-mendaftar{
+      width:auto;
+      margin:10px 0 0 2px;
+      padding:5px 9px 5px 9px;
+      color:white;
+      background-color:#67A54B;
+      outline:none;
+      border:1px solid #006600;
+      font-weight:bold;
+      }
+
+      .tombol-mendaftar:active{
+      background-color:#609946;
+      padding:5px 9px 5px 9px;
+      }
